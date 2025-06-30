@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "IBMPlexSansBold"; /* <== On donne un nom unique */
+  src: url("../src/assets/font/IBMPlexSans-Bold.eot")
+      format("embedded-opentype"),
+    /* <== On donne l'emplacement du fichier de police et on précise le format pour être sûr que le navigateur ne se trompe pas en le devinant à partir de l'extension du fichier */
+      url("../src/assets/font/IBMPlexSans-Bold.ttf") format("truetype"),
+    url("../src/assets/font/IBMPlexSans-Bold.woff") format("woff"),
+    url("../src/assets/font/IBMPlexSans-Bold.woff2") format("woff2"),
+    url("../src/assets/font/IBMPlexSans-Bold.svg") format("svg");
+  font-weight: bold; /* <== On définit le poids de la police */
+  font-style: bold; /* <== On définit le style de la police */
+  font-display: swap; /* <== On spécifie le comportement d'affichage de la police. Ca indique que le navigateur doit afficher une police de secours immédiatement, puis charger la police personnalisée en arrière-plan. */
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../src/assets/font/IBMPlexSans.eot") format("embedded-opentype"),
+    url("../src/assets/font/IBMPlexSans.woff2") format("woff2"),
+    url("../src/assets/font/IBMPlexSans.woff") format("woff"),
+    url("../src/assets/font/IBMPlexSans.ttf") format("truetype"),
+    url("../src/assets/font/IBMPlexSans.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "StratosDeliverooWeb";
+  src: url("../src/assets/font/StratosDeliverooWeb-SemiBold.eot")
+      format("embedded-opentype"),
+    url("../src/assets/font/StratosDeliverooWeb-SemiBold.woff2") format("woff2"),
+    url("../src/assets/font/StratosDeliverooWeb-SemiBold.woff") format("woff"),
+    url("../src/assets/font/StratosDeliverooWeb-SemiBold.ttf")
+      format("truetype"),
+    url("../src/assets/font/StratosDeliverooWeb-SemiBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

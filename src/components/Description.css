@@ -1,0 +1,32 @@
+.textDescription {
+  display: flex;
+  flex-direction: column;
+  border: 3px red solid;
+  flex: 1;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 19px;
+  color: #868a8a;
+  line-height: 1.5;
+}
+
+.photoDescription {
+  display: flex;
+  height: 200px;
+  border: 3px solid blue;
+  flex: 0 0 calc(30% - 10px);
+  border-radius: 10px;
+}
+
+.photoDescription img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

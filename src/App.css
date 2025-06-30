@@ -1,0 +1,10 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  /* border: 2px solid pink;*/
+  margin: 0 auto;
+  /*padding: 0 20px;*/
+}
