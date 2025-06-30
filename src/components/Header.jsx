@@ -4,8 +4,10 @@ import Brand from "../components/Brand";
 const Header = () => {
   return (
     <>
-      <header className="container">
-        <Brand />
+      <header>
+        <div className="container">
+          <Brand />
+        </div>
       </header>
     </>
   );

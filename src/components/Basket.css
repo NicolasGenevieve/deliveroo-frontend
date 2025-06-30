@@ -1,0 +1,6 @@
+.basket {
+  border: orange solid 3px;
+  height: 100px;
+  flex: 0 0 calc(30% - 20px);
+  margin-top: 50px;
+}

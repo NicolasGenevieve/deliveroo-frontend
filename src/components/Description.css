@@ -1,7 +1,7 @@
 .textDescription {
   display: flex;
   flex-direction: column;
-  border: 3px red solid;
+  /* border: 3px red solid; */
   flex: 1;
   gap: 50px;
 }
@@ -20,7 +20,7 @@ h1 {
 .photoDescription {
   display: flex;
   height: 200px;
-  border: 3px solid blue;
+  /*  border: 3px solid blue;*/
   flex: 0 0 calc(30% - 10px);
   border-radius: 10px;
 }
@@ -29,4 +29,5 @@ h1 {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }

@@ -1,0 +1,17 @@
+.formules {
+  /*border: 3px solid blue;*/
+  flex: 0 0 calc(70% - 10px);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+.displayCards {
+  display: flex;
+  gap: 20px;
+  padding: 0 5px;
+}

@@ -1,7 +1,7 @@
 .section1 {
-  border: solid 3px green;
-  height: 260px;
+  /* border: solid 3px green; */
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  padding: 50px 0;
 }

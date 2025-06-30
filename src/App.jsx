@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header.jsx";
 import Section1 from "./components/Section1.jsx";
+import Section2 from "./components/Section2.jsx";
 import Footer from "./components/Footer.jsx";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -33,7 +34,12 @@ function App() {
       ) : (
         <>
           <Header />
-          <Section1 />
+          <Section1
+            title={data.restaurant.name}
+            description={data.restaurant.description}
+            picture={data.restaurant.picture}
+          />
+          <Section2 categories={data.categories} />
           <Footer />
         </>
       )}

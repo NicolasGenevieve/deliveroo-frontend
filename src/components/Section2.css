@@ -1,0 +1,10 @@
+main {
+  background-color: #f3f5f5;
+}
+
+.section2 {
+  /*  border: solid 3px green; */
+  display: flex;
+  /*  align-items: center; */
+  gap: 30px;
+}

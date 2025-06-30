@@ -6,3 +6,8 @@ header {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+header > div {
+  /* border: solid 3px red; */
+  width: 100%;
+}
