@@ -6,9 +6,8 @@
   padding: 20px;
   display: flex;
   gap: 10px;
-  min-width: 380px;
-  max-width: 400px;
-  max-height: 180px;
+  width: calc(50% - 10px);
+  height: 180px;
 }
 
 .cards:hover {

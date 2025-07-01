@@ -11,7 +11,7 @@ h2 {
 }
 
 .displayCards {
-  /*border: solid 3px green;*/
+  border: solid 3px green;
   display: flex;
   gap: 20px;
   padding: 0 5px;
