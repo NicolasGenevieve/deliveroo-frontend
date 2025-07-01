@@ -13,9 +13,9 @@
 
 .cards:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 3px 3px -5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 0px 3px 3px -5px rgba(0, 0, 0, 0);
+  box-shadow: -1px 9px 19px 3px rgba(184, 184, 184, 0.75);
+  -webkit-box-shadow: -1px 9px 19px 3px rgba(184, 184, 184, 0.75);
+  -moz-box-shadow: -1px 9px 19px 3px rgba(184, 184, 184, 0.75);
 }
 
 .cardsDesc {
