@@ -1,23 +1,27 @@
 import "./Cards.css";
 import { IoIosStar } from "react-icons/io";
 
-const Cards = () => {
+const Cards = ({ meals }) => {
   return (
     <div className="cards">
       <div className="cardsDesc">
-        <h3>Brunch authentique 1 personne</h3>
-        <p className="descFormules">
-          Assiette de jambon cuit, jambon fumeì, terrine, comté bio &
-        </p>
+        <h3>{meals.title}</h3>
+        <p className="descFormules">{meals.description}</p>
         <div className="pricepopular">
-          <p className="price">25,00€</p>
+          <p className="price">{meals.price}€</p>
           <div className="popular">
-            <IoIosStar /> <span>Populaire</span>
+            {meals.popular ? (
+              <>
+                <IoIosStar /> <span>Populaire</span>
+              </>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
       <div className="pictureCards">
-        <img src="../../src/assets/img/description.png" alt="description" />
+        {meals.picture ? <img src={meals.picture} alt="description" /> : <></>}
       </div>
     </div>
   );
