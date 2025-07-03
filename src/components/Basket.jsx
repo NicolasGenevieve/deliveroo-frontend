@@ -9,7 +9,12 @@ const Basket = ({ basket, setBasket }) => {
   return (
     <div className="basketWrap">
       <div className="basket">
-        <button className="addBasketDisable">Valider mon panier</button>
+        <button
+          className={isEmpty ? "addBasketDisable" : "addBasketActive"}
+          disabled={isEmpty}
+        >
+          Valider mon panier
+        </button>
         {!isEmpty ? (
           basket.map((item) =>
             item.qty === 0 ? (
@@ -18,44 +23,48 @@ const Basket = ({ basket, setBasket }) => {
               <>
                 <div key={item.id} className="basketItem">
                   {/* {console.log(item)} */}
-                  <button
-                    onClick={() => {
-                      const newBasket = basket.map((product) => {
-                        if (product.id === item.id) {
-                          return {
-                            ...product,
-                            qty: product.qty - 1,
-                          };
-                        } else {
-                          return product;
-                        }
-                      });
-                      setBasket(newBasket);
-                    }}
-                  >
-                    -
-                  </button>
-                  <div className="itemNum">{item.qty}</div>
-                  <button
-                    onClick={() => {
-                      const newBasket = basket.map((product) => {
-                        if (product.id === item.id) {
-                          return {
-                            ...product,
-                            qty: product.qty + 1,
-                          };
-                        } else {
-                          return product;
-                        }
-                      });
-                      setBasket(newBasket);
-                    }}
-                  >
-                    +
-                  </button>
+                  <div className="counter">
+                    <button
+                      className="addQty"
+                      onClick={() => {
+                        const newBasket = basket.map((product) => {
+                          if (product.id === item.id) {
+                            return {
+                              ...product,
+                              qty: product.qty - 1,
+                            };
+                          } else {
+                            return product;
+                          }
+                        });
+                        setBasket(newBasket);
+                      }}
+                    >
+                      -
+                    </button>
+                    <div className="itemNum">{item.qty}</div>
+                    <button
+                      className="addQty"
+                      onClick={() => {
+                        const newBasket = basket.map((product) => {
+                          if (product.id === item.id) {
+                            return {
+                              ...product,
+                              qty: product.qty + 1,
+                            };
+                          } else {
+                            return product;
+                          }
+                        });
+                        setBasket(newBasket);
+                      }}
+                    >
+                      +
+                    </button>
+                  </div>
                   <div className="itemName">{item.title}</div>
                   <div className="itemPrice">
-                    {(item.price * item.qty).toFixed(2)}
+                    {(item.price * item.qty).toFixed(2)} €
                   </div>
                 </div>
               </>
@@ -68,16 +77,18 @@ const Basket = ({ basket, setBasket }) => {
         )}
         {!isEmpty ? (
           <>
+            <div className="trait"></div>
             <div className="subTotalDelivery">
               <div className="subTotal">
-                <span>Sous Total</span> {subTotal.toFixed(2)}
+                <span>Sous Total</span> {subTotal.toFixed(2)} €
               </div>
               <div className="subTotal">
-                <span>Livraison</span> {delivery.toFixed(2)}
+                <span>Livraison</span> {delivery.toFixed(2)} €
               </div>
             </div>
-            <div className="subTotal">
-              <span>Total</span> {total.toFixed(2)}
+            <div className="trait"></div>
+            <div className="total">
+              <span>Total</span> {total.toFixed(2)} €
             </div>
           </>
         ) : (

@@ -1,10 +1,10 @@
 .basketWrap {
   max-width: 350px;
-  border: solid green 3px;
+  /* border: solid green 3px; */
 }
 
 .basket {
-  border: orange solid 3px;
+  /* border: orange solid 3px; */
   width: 340px;
   margin-top: 50px;
   position: sticky;
@@ -25,6 +25,7 @@
   border-radius: 5px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .addBasketDisable {
@@ -41,7 +42,7 @@
 
 .emptyBasket {
   height: 100px;
-  border: solid 3px grey;
+  /* border: solid 3px grey; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,9 +50,9 @@
 }
 
 .basketItem {
-  min-height: 80px;
+  min-height: 40px;
   padding: 5px 10px;
-  border: solid 3px grey;
+  /* border: solid 3px grey; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,17 +61,16 @@
 }
 
 .itemNum {
-  font-size: 10px;
+  font-size: 16px;
   color: black;
-  border: blue 1px solid;
-  width: 10%;
+  /* border: blue 1px solid; */
   align-content: center;
 }
 
 .itemName {
   font-size: 14px;
   color: black;
-  border: blue 1px solid;
+  /* border: blue 1px solid; */
   width: 55%;
   line-height: 1.2;
 }
@@ -78,22 +78,54 @@
 .itemPrice {
   font-size: 14px;
   color: black;
-  border: blue 1px solid;
+  /* border: blue 1px solid; */
   width: 25%;
   display: flex;
   justify-content: flex-end;
 }
 
 .subTotal {
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
+  font-size: 16px;
 }
 
 .subTotalDelivery {
   display: flex;
   flex-direction: column;
+}
+
+.trait {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.total {
+  /* border: solid 1px blue; */
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.addQty {
+  border-radius: 50%;
+  border: solid 1px #00cdbd;
+  color: #00cdbd;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.counter {
+  display: flex;
+  gap: 5px;
 }
