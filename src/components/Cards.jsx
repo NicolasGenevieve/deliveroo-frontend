@@ -1,7 +1,7 @@
 import "./Cards.css";
 import { IoIosStar } from "react-icons/io";
 
-const Cards = ({ meals, basket, setBasket, counter, setCounter }) => {
+const Cards = ({ meals, basket, setBasket }) => {
   return (
     <>
       {/* {basket.map((index)=>{})} */}
@@ -32,7 +32,6 @@ const Cards = ({ meals, basket, setBasket, counter, setCounter }) => {
               price: meals.price,
             });
             setBasket(newBasket);
-            setCounter(counter);
           }
 
           //console.log(newBasket);

@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [basket, setBasket] = useState([]);
-  const [counter, setCounter] = useState(1);
+  //const [counter, setCounter] = useState(1);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   // console.log(data);
-  console.log(basket);
+  // console.log(basket);
   // console.log(counter);
 
   // basket.map((item) => console.log(item.id));
@@ -49,8 +49,6 @@ function App() {
             categories={data.categories}
             basket={basket}
             setBasket={setBasket}
-            counter={counter}
-            setCounter={setCounter}
           />
           <Footer />
         </>
