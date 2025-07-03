@@ -1,7 +1,7 @@
 import "./Formules.css";
 import Cards from "./Cards";
 
-const Formules = ({ categories }) => {
+const Formules = ({ categories, basket, setBasket, counter, setCounter }) => {
   return (
     <div>
       {categories.map((category) => (
@@ -11,7 +11,14 @@ const Formules = ({ categories }) => {
               <h2>{category.name}</h2>
               <div className="displayCards">
                 {category.meals.map((meals) => (
-                  <Cards key={meals} meals={meals} />
+                  <Cards
+                    key={meals.id}
+                    meals={meals}
+                    basket={basket}
+                    setBasket={setBasket}
+                    counter={counter}
+                    setCounter={setCounter}
+                  />
                 ))}
               </div>
             </>

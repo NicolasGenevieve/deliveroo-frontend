@@ -1,8 +1,99 @@
+.basketWrap {
+  max-width: 350px;
+  border: solid green 3px;
+}
+
 .basket {
   border: orange solid 3px;
-  height: 100px;
-  flex: 0 0 calc(30% - 20px);
+  width: 340px;
   margin-top: 50px;
   position: sticky;
   top: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.addBasketActive {
+  background-color: #00cdbd;
+  border: none;
+  font-size: 16px;
+  padding: 15px 10px;
+  flex: 1;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.addBasketDisable {
+  background-color: #bac3c3;
+  border: none;
+  font-size: 16px;
+  padding: 15px 10px;
+  flex: 1;
+  border-radius: 5px;
+  color: #8b9a9b;
+  font-weight: bold;
+  max-height: 50px;
+}
+
+.emptyBasket {
+  height: 100px;
+  border: solid 3px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b8bbbb;
+}
+
+.basketItem {
+  min-height: 80px;
+  padding: 5px 10px;
+  border: solid 3px grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b8bbbb;
+  gap: 10px;
+}
+
+.itemNum {
+  font-size: 10px;
+  color: black;
+  border: blue 1px solid;
+  width: 10%;
+  align-content: center;
+}
+
+.itemName {
+  font-size: 14px;
+  color: black;
+  border: blue 1px solid;
+  width: 55%;
+  line-height: 1.2;
+}
+
+.itemPrice {
+  font-size: 14px;
+  color: black;
+  border: blue 1px solid;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subTotal {
+  border: solid 1px blue;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.subTotalDelivery {
+  display: flex;
+  flex-direction: column;
 }

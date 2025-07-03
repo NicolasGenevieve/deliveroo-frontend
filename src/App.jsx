@@ -9,6 +9,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  const [basket, setBasket] = useState([]);
+  const [counter, setCounter] = useState(1);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +27,11 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(data);
+  // console.log(data);
+  console.log(basket);
+  // console.log(counter);
+
+  // basket.map((item) => console.log(item.id));
 
   return (
     <>
@@ -39,7 +45,13 @@ function App() {
             description={data.restaurant.description}
             picture={data.restaurant.picture}
           />
-          <Section2 categories={data.categories} />
+          <Section2
+            categories={data.categories}
+            basket={basket}
+            setBasket={setBasket}
+            counter={counter}
+            setCounter={setCounter}
+          />
           <Footer />
         </>
       )}

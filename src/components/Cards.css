@@ -1,6 +1,6 @@
 .cards {
   background-color: white;
-  /* border: solid brown 2px; */
+  /*border: solid brown 2px;*/
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -33,7 +33,6 @@ h3 {
   font-size: 14px;
   color: #868a8a;
   line-height: 1.2;
-  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
